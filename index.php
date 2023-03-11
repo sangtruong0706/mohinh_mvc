@@ -7,7 +7,7 @@
     <title>Mô hình MVC</title>
 </head>
 <body>
-
+<!-- comment -->
     <h1>
         <?php 
             include_once('app/config/config.php');
