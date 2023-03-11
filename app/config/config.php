@@ -16,3 +16,5 @@ $url_tmp = rtrim($url_tmp, "/");
 define('BASE_URL', $url_tmp);
 
 
+// ROOT: http://localhost/pull-code-github/mohinh_mvc/public/
+// ASSETS: http://localhost/pull-code-github/mohinh_mvc/public/assets/

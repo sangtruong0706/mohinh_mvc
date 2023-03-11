@@ -38,7 +38,7 @@
                             <td><?=$value['desc_category']?></td>
                             <td>
                                 <a href="<?= BASE_URL ?>/category/editCategory/<?=$value['id_category']?>"><i title="Sửa" class="bi bi-wrench"></i></a> ||
-                                <a href="<?= BASE_URL ?>/category/deleteCategory/<?=$value['id_category']?>"><i title="Xóa" class="bi bi-trash3"></i></a>
+                                <a onclick="return confirm('Bạn có chắc chắn muốn xóa không??')" href="<?= BASE_URL ?>/category/deleteCategory/<?=$value['id_category']?>"><i title="Xóa" class="bi bi-trash3"></i></a>
                             </td>
                         </tr>
                 <?php

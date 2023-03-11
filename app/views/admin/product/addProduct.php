@@ -15,28 +15,6 @@
     <section class="section">
         <div class="row">
             <div class="col-lg-12">
-                <!-- <div class="card">
-                    <div class="card-body">
-                        <form autocomplete="off" class="row g-3" method="POST" action="<?= BASE_URL ?>/product/insertProduct">
-                            <div class="col-md-12 my-4">
-                                <input type="text" name="title_product" class="form-control" placeholder="Tên sản phẩm">
-                            </div>
-                            <div class="col-md-12 my-4">
-                                <input type="text" name="img_product" class="form-control" placeholder="Hình ảnh sản phẩm">
-                            </div>
-                            <div class="col-md-12 my-4">
-                                <input type="text" name="price_product" class="form-control" placeholder="Giá sản phẩm">
-                            </div>
-                            <div class="col-md-12">
-                                <textarea placeholder="Mô tả" style="resize: none;" name="desc_product" class="form-control" rows="3"></textarea>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" name="addproduct_cate" class="btn btn-primary">Thêm danh mục</button>
-                            </div>
-                        </form>
-
-                    </div>
-                </div> -->
         <div class="card" style="font-size: 20px;">
             <div class="card-body">
               <h5 class="card-title"></h5>
