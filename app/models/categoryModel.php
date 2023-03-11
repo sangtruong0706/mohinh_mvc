@@ -28,7 +28,7 @@
             return $this->db->insert($table, $data);
         }
         public function postCategory($table){
-            $sql = "SELECT * FROM $table ORDER BY id_post DESC ";
+            $sql = "SELECT * FROM $table ORDER BY id_category_post DESC ";
             return $this->db->select($sql);
         } 
         public function deleteCategoryPost($table, $cond){

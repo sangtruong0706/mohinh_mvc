@@ -11,7 +11,7 @@
         }
         public function addCategory(){
             $this->load->view('admin/header');
-            $this->load->view('admin/product/addCategory');
+            $this->load->view('admin/category/addCategory');
             $this->load->view('admin/footer');
         }
         public function insertCategory(){
@@ -40,7 +40,7 @@
             $categoryModel = $this->load->model('categoryModel');
             $data['category'] = $categoryModel->category($table);
 
-            $this->load->view('admin/product/listCategory', $data);
+            $this->load->view('admin/category/listCategory', $data);
             $this->load->view('admin/footer');
         }
         public function deleteCategory($id){
@@ -62,7 +62,7 @@
             $categoryModel = $this->load->model('categoryModel');
             $data['categoryID'] = $categoryModel->categoryID($table, $cond);
             $this->load->view('admin/header');
-            $this->load->view('admin/product/editCategory', $data);
+            $this->load->view('admin/category/editCategory', $data);
             $this->load->view('admin/footer');
         }
         public function updateCategory($id){

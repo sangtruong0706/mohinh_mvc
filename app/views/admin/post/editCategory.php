@@ -22,12 +22,12 @@
                             foreach ($categoryID as $key=>$value)
                             {
                         ?>
-                                <form autocomplete="off" class="row g-3" method="POST" action="<?= BASE_URL ?>/post/updateCategory/<?=$value['id_post']?>">
+                                <form autocomplete="off" class="row g-3" method="POST" action="<?= BASE_URL ?>/post/updateCategory/<?=$value['id_category_post']?>">
                                     <div class="col-md-12 my-4">
-                                        <input type="text" name="title_post" class="form-control" placeholder="Tên danh mục" value="<?=$value['title_post']?>">
+                                        <input type="text" name="title_category_post" class="form-control" placeholder="Tên danh mục" value="<?=$value['title_category_post']?>">
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="text" name="desc_post" class="form-control" placeholder="Mô tả" value="<?=$value['desc_post']?>">
+                                        <input type="text" name="desc_category_post" class="form-control" placeholder="Mô tả" value="<?=$value['desc_category_post']?>">
                      
                                     </div>
 

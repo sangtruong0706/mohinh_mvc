@@ -120,7 +120,7 @@
             $file_ext = strtolower(end($div));
             $unique_image = $div[0].time().'.'.$file_ext;
             $path_uploads = "public/uploads/product/".$unique_image;
-            move_uploaded_file($tmp_images, $path_uploads);
+
 
             $table = 'tbl_product';
             $data = array(
@@ -134,6 +134,7 @@
             $productModel = $this->load->model('productModel');
             $result = $productModel->insertProduct($table, $data);
             if ($result == 1){
+                move_uploaded_file($tmp_images, $path_uploads);
                 Session::set('message','Thêm sản phẩm thành công!');
                 header('Location:'.BASE_URL."/product/listProduct");
             }else{

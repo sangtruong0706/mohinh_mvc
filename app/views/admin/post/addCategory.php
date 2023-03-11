@@ -20,10 +20,10 @@
                         <!-- No Labels Form -->
                         <form autocomplete="off" class="row g-3" method="POST" action="<?= BASE_URL ?>/post/insertCategory">
                             <div class="col-md-12 my-4">
-                                <input type="text" name="title_post" class="form-control" placeholder="Tên danh mục">
+                                <input type="text" name="title_category_post" class="form-control" placeholder="Tên danh mục">
                             </div>
                             <div class="col-md-12">
-                                <input type="text" name="desc_post" class="form-control" placeholder="Mô tả">
+                                <input type="text" name="desc_category_post" class="form-control" placeholder="Mô tả">
                             </div>
                             <div class="text-center">
                                 <button type="submit" name="add_cate_post" class="btn btn-primary">Thêm danh mục</button>
