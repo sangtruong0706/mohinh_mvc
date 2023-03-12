@@ -1,34 +1,38 @@
 <?php
-    class order extends DController{
+    class userproduct extends DController{
         public function __construct()
         {
             $data = array();
-            Session::checkSession();
             parent::__construct();
         }
         public function index(){
-            $this->order();
+            $this->categoryProduct();
         }
-        public function order(){
+
+        public function categoryProduct(){
+
+            // $this->load->view('user/slider');  
             $categoryModel = $this->load->model('categoryModel');
             $table = 'tbl_category';
             $tablePost = 'tbl_category_post';
             $data['category'] = $categoryModel->categoryHome($table);
             $data['category_post'] = $categoryModel->categoryPostHome($tablePost);
             $this->load->view('user/header', $data);
-            $this->load->view('admin/order/order');
-            $this->load->view('admin/footer');
+            $this->load->view('user/categoryProduct');
+            $this->load->view('user/footer');
         }
-        public function addOrder(){
+        public function detailProduct(){
             $categoryModel = $this->load->model('categoryModel');
             $table = 'tbl_category';
             $tablePost = 'tbl_category_post';
             $data['category'] = $categoryModel->categoryHome($table);
             $data['category_post'] = $categoryModel->categoryPostHome($tablePost);
             $this->load->view('user/header', $data);
-            $this->load->view('admin/order/addOrder');
-            $this->load->view('admin/footer');
+            // $this->load->view('user/slider');      
+            $this->load->view('user/detailProduct');
+            $this->load->view('user/footer');
         }
+
 
     }
 ?>

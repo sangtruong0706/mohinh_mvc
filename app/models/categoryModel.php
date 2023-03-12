@@ -9,6 +9,10 @@
             $sql = "SELECT * FROM $table ORDER BY id_category DESC ";
             return $this->db->select($sql);
         } 
+        public function categoryHome($table){
+            $sql = "SELECT * FROM $table ORDER BY id_category DESC ";
+            return $this->db->select($sql);
+        } 
         public function categoryID($table, $cond){
             $sql = "SELECT * FROM $table WHERE $cond";
             return $this->db->select($sql);
@@ -28,6 +32,10 @@
             return $this->db->insert($table, $data);
         }
         public function postCategory($table){
+            $sql = "SELECT * FROM $table ORDER BY id_category_post DESC ";
+            return $this->db->select($sql);
+        } 
+        public function categoryPostHome($table){
             $sql = "SELECT * FROM $table ORDER BY id_category_post DESC ";
             return $this->db->select($sql);
         } 
