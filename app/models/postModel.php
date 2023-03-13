@@ -27,15 +27,19 @@
             $sql = "SELECT * FROM $table WHERE $cond";
             return $this->db->select($sql);
         }
-
-
-
-
-
         public function updatePost($table, $data, $cond){
             return $this->db->update($table, $data, $cond);
         }
 
+        public function categoryPostIDHome($tablePost, $tableCatePost, $id){
+            $sql = "SELECT * FROM $tablePost, $tableCatePost
+            WHERE $tablePost.id_category_post=$tableCatePost.id_category_post AND $tablePost.id_category_post='$id' ORDER BY $tablePost.id_post DESC ";
+            return $this->db->select($sql);
+        }
+        public function allPost($tablePost){
+            $sql = "SELECT * FROM $tablePost ORDER BY $tablePost.id_post DESC ";
+            return $this->db->select($sql);
+        }
 
 
     }

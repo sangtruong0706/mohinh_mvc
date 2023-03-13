@@ -31,7 +31,7 @@
                     <div class="content_text">
                         <ul class="list_ul">
                             <?php 
-                                foreach ($category_post_id as $key=>$post)
+                                foreach ($all_post as $key=>$post)
                                 {
                             ?>
                                     <li class="lists">

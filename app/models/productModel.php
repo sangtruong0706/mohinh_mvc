@@ -29,6 +29,10 @@
         public function deleteProduct($table, $cond){
             return $this->db->delete($table, $cond);
         }
+        public function allProduct($tablePro){
+            $sql = "SELECT * FROM $tablePro ORDER BY $tablePro.id_product DESC";
+            return $this->db->select($sql);
+        }
 
 
     }

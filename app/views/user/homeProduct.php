@@ -34,10 +34,7 @@
         <div class="module_pro_all">
             <div class="box-title">
                 <div class="title-bar">
-                    <h1>Danh mục : IPHONE</h1>
-                    <a class="read_more" href="sanpham.php">
-                        Xem thêm
-                    </a>
+                    <h1>Tất cả sản phẩm</h1>
                 </div>
             </div><!-- end box title -->
 
@@ -45,7 +42,7 @@
                 <div class="girds_all list_all_other_page ">
 
                 <?php
-                    foreach($category_id as $key=>$pro)
+                    foreach($all_product as $key=>$pro)
                     {
                 ?>
                     <div class="grids">

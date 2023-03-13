@@ -4,12 +4,8 @@
         {
             parent::__construct();
         }
-        // function category product
+        // function category product - ADMIN function
         public function category($table){
-            $sql = "SELECT * FROM $table ORDER BY id_category DESC ";
-            return $this->db->select($sql);
-        } 
-        public function categoryHome($table){
             $sql = "SELECT * FROM $table ORDER BY id_category DESC ";
             return $this->db->select($sql);
         } 
@@ -26,6 +22,18 @@
         public function deleteCategory($table, $cond){
             return $this->db->delete($table, $cond);
         }
+        //USER FUNCTION-------------------------------
+        public function categoryHome($table){
+            $sql = "SELECT * FROM $table ORDER BY id_category DESC ";
+            return $this->db->select($sql);
+        } 
+        public function categoryIDHome($tableCate, $tablePro,$id){
+            $sql = "SELECT * FROM $tableCate, $tablePro WHERE $tableCate.id_category=$tablePro.id_category
+            AND $tablePro.id_category='$id' ORDER BY $tablePro.id_product DESC";
+            return $this->db->select($sql);
+        }
+
+
         //end function category product
 
         public function insertCategoryPost($table, $data){
