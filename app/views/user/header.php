@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web</title>
     <meta http-equiv="cleartype" content="on" />
-    <link rel="icon" href="<?= ASSETS ?>/user/image/Fb.png" type="image/x-icon" />
+    <link rel="icon" href="<?= ASSETS ?>/user/image/favicon.png" type="image/x-icon" />
     <meta name="Description" content="" />
     <meta name="Keywords" content="" />
     <!--tkw-->
@@ -37,7 +37,7 @@
                 <div class="header_top">
                     <div class="bg_in">
                         <div class="logo">
-                            <a href="<?= BASE_URL ?>/index"><img src="<?= ASSETS ?>/user/image/logohere.jpeg" width="250" height="100" alt="logohere.jpeg" /></a>
+                            <a href="<?= BASE_URL ?>/index"><img src="<?= ASSETS ?>/user/image/logo.webp" width="250" height="100" alt="logohere.jpeg" /></a>
                         </div>
                         <nav class="menu_top">
                             <form class="search_form" method="get" action="">

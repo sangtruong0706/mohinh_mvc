@@ -33,6 +33,10 @@
             $sql = "SELECT * FROM $tablePro ORDER BY $tablePro.id_product DESC";
             return $this->db->select($sql);
         }
+        public function detailProductHome($tableCate, $tablePro, $id){
+            $sql = "SELECT * FROM $tablePro, $tableCate WHERE $tableCate.id_category=$tablePro.id_category AND $tablePro.id_product='$id'";
+            return $this->db->select($sql);
+        }
 
 
     }

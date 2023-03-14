@@ -34,15 +34,22 @@
             $this->load->view('user/categoryProduct', $data);
             $this->load->view('user/footer');
         }
-        public function detailProduct(){
+        public function detailProduct($id){
             $categoryModel = $this->load->model('categoryModel');
-            $table = 'tbl_category';
+            $productModel = $this->load->model('productModel');
+
+            $tableCate = 'tbl_category';
             $tablePost = 'tbl_category_post';
-            $data['category'] = $categoryModel->categoryHome($table);
+            $tablePro = 'tbl_product';
+            // $cond = " $tableCate.id_category=$tablePro.id_category AND $tablePro.id_product='$id'";
+
+            $data['category'] = $categoryModel->categoryHome($tableCate);
             $data['category_post'] = $categoryModel->categoryPostHome($tablePost);
+            $data['detail_product'] = $productModel->detailProductHome($tableCate,$tablePro, $id);
+
             $this->load->view('user/header', $data);
             // $this->load->view('user/slider');      
-            $this->load->view('user/detailProduct');
+            $this->load->view('user/detailProduct', $data);
             $this->load->view('user/footer');
         }
 

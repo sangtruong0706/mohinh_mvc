@@ -1,23 +1,4 @@
-<!-- <form autocomplete="off" action="<?= BASE_URL ?>/login/authentication" method="POST">
-    <?php
-    if (isset($msg)) {
-        echo '<span style="color:blue";>' . $msg . '</span>';
-    }
-    ?>
-    <table>
-        <tr>
-            <td>Username:</td>
-            <td><input type="text" required="1" name="username"></td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" required="1" name="password" ></td>
-        </tr>
-        <tr>
-            <td><input type="submit" name="login" value="Login"></td>
-        </tr>
-    </table>
-</form> -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,11 +7,11 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title><?= $data['page_title'] . " | " . WEBSITE_TITLE ?></title>
+    <title>Login</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <link rel="stylesheet" href="<?= ASSETS ?>user/assets/css/login.css">
+    <link rel="stylesheet" href="<?= ASSETS ?>admin/assets/css/login.css">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="<?= ASSETS ?>admin/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -49,7 +30,7 @@
         <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Đăng nhập</label>
         <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Đăng ký</label>
         <div class="login-form">
-            <form method="post" enctype="multipart/form-data" action="<?= BASE_URL ?>/login/authentication">
+            <form autocomplete="off" method="post" enctype="multipart/form-data" action="<?= BASE_URL ?>/login/authentication">
                 <div class="sign-in-htm">
                     <div class="group">
                         <label for="user" class="label">Tên tài khoản</label>
@@ -63,7 +44,7 @@
 						<input id="check" type="checkbox" class="check" checked>
 						<label for="check"><span class="icon"></span> Keep me Signed in</label>
 					</div> -->
-                    <div class="group" style="margin-top: 10px;">
+                    <div class="group" style="margin-top: 35px;">
                         <input type="submit" name="login" class="button" value="Đăng nhập">
                     </div>
                     <div class="hr"></div>
@@ -72,7 +53,7 @@
                     </div>
                 </div>
             </form>
-            <form method="post" enctype="multipart/form-data">
+            <form autocomplete="off" method="post" enctype="multipart/form-data">
                 <div class="sign-up-htm">
                     <div class="group">
                         <label for="user" class="label">Tên tài khoản</label>
@@ -95,7 +76,7 @@
                         <input id="email" name="email" type="email" class="input" required>
                     </div>
 
-                    <div class="group">
+                    <div class="group" style="margin-top: 35px;">
                         <input type="submit" name="dangky" class="button" value="Sign Up">
                     </div>
                     <div class="hr"></div>

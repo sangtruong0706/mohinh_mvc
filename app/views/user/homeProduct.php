@@ -20,7 +20,7 @@
 
                     <a itemprop="item" href="sanpham.php">
 
-                        <span itemprop="name">Iphone</span></a>
+                        <span itemprop="name">Tất cả sản phẩm</span></a>
 
                     <meta itemprop="position" content="2" />
 
@@ -50,7 +50,7 @@
                             <div class="content">
                                 <div class="img-right-pro">
 
-                                    <a href="sanpham.php">
+                                    <a href="<?= BASE_URL ?>/userproduct/detailProduct/<?=$pro['id_product']?>">
                                         <img class="lazy img-pro content-image" src="<?= ROOT ?>/uploads/product/<?=$pro['img_product']?>" data-original="image/iphone.png" alt="Máy in Canon MF229DW" />
                                     </a>
 
@@ -61,7 +61,7 @@
                                     </div>
                                 </div>
                                 <div class="name-pro-right">
-                                    <a href="chitietsp.php">
+                                    <a href="<?= BASE_URL ?>/userproduct/detailProduct/<?=$pro['id_product']?>">
                                         <h3><?=$pro['title_product']?></h3>
                                     </a>
                                 </div>
